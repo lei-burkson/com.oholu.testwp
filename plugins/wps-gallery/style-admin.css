@@ -1,0 +1,24 @@
+.widefat {width: auto;}
+.wps-list-width {min-width:10%}
+.wps-form-width {width:100%}
+.wps-th-width {width:25%}
+.wps-field-width {width:100%}
+
+.wps-update-page .wp-list-table,
+.wps-create-page .wp-list-table {
+	border: 0;
+    border-radius: 10px;
+    padding: 15px;
+    box-sizing: border-box;
+    margin: 20px 0;
+} 
+.responsive-table {
+	overflow-x: auto;
+}
+
+pre.wps-code-pre {
+	padding: 5px 10px;
+	background-color: #bbb;
+	display: inline-block;
+	margin: 0;
+}

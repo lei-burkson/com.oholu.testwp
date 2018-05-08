@@ -1,0 +1,236 @@
+/*Store Locator*/
+.wps-input-group {
+	position: relative;
+    display: table;
+    border-collapse: separate;
+    background-color: #f9f9f9;
+}
+
+.wps-input-group-addon {
+    border-radius: 0;
+    color: #dedede;
+	display: table-cell;
+	width: 1%;
+    white-space: nowrap;
+    vertical-align: middle;
+    padding: 6px 12px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1;
+    text-align: center;
+    border: 1px solid #dedede;
+    background-color: transparent;
+    border-left: 0;
+    border-right: 0;
+    box-shadow: none;
+}
+
+.wps-input-group-addon > img {
+    width: 15px;
+    max-width: 15px;
+}
+
+.wps-form-control,
+input[type="text"].wps-form-control {
+    border-left: 0;
+    border-right: 0;
+    background-color: transparent;
+    font-family: "Oswald", sans-serif;
+    letter-spacing: 0.15em;
+    height: 44px;
+    padding-left: 5px;
+    border-radius: 0;
+    display: table-cell;
+    border-color: #dedede;
+    width: 100%;
+}
+
+	.wps-form-control::-webkit-input-placeholder {
+		color: #999;
+	}
+
+.wps-locator-scroll-wrap {
+    overflow-y: auto;
+    height: calc(100% - 60px);
+}
+
+.wps-locator-result-list {
+    padding-bottom: 30px;
+}
+
+.wps-locator-result-list .locator-result-item {
+    border-bottom: 1px solid #dedede;
+    color: #000;
+    padding: 35px 20px;
+    display: block;
+    position: relative;
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    box-shadow: none;
+}
+
+.wps-locator-result-list .locator-result-item:hover, .wps-locator-result-list .locator-result-item:active, .wps-locator-result-list .locator-result-item:focus {
+    color: #000;
+    text-decoration: none;
+    outline: none;
+    box-shadow: none;
+}
+
+.wps-locator-result-list .locator-result-item.active {
+    background-color: #efefef;
+    box-shadow: none;
+}
+
+.wps-locator-result-list .locator-result-item.active:after {
+    background-color: #cf202f;
+    content: '';
+    display: block;
+    height: 3px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: absolute;
+}
+
+.wps-locator-result-list .locator-result-item:last-child {
+    border-bottom: 0;
+}
+
+.wps-locator-result-list .locator-result-item .result-item-header {
+    display: inline-block;
+    margin-bottom: 0;
+}
+
+.wps-locator-result-list .locator-result-item .result-item-directions {
+    color: #000;
+}
+
+.wps-locator-result-list .locator-result-item .result-item-directions:hover, .wps-locator-result-list .locator-result-item .result-item-directions:active, .wps-locator-result-list .locator-result-item .result-item-directions:focus {
+    color: #000;
+    text-decoration: none;
+}
+
+.wps-locator-result-list .locator-result-item .result-item-distance,
+    .wps-locator-result-list .locator-result-item .result-item-phone {
+    float: right;
+}
+
+.wps-locator-result-list .locator-result-item .result-item-distance:after,
+      .wps-locator-result-list .locator-result-item .result-item-phone:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.wps-locator-result-list .locator-result-item .result-item-address {
+    font-size: 12px;
+    letter-spacing: 0.8px;
+    margin-top: 15px;
+    margin-bottom: 25px;
+}
+
+.wps-locator-map-wrap {
+    background-color: #888;
+    min-height: 300px;
+    position: relative;
+}
+
+	.wps-locator-warning {
+		position: absolute;
+		bottom: 0;
+		width: 100%;
+		text-align: center;
+		background-color: #0082c9;
+	    color: #fff;
+	    padding: 5px;
+	    font-size: 13px;
+	}
+
+.wps-locator-utils-wrap {
+    padding-top: 0;
+    padding-bottom: 0;
+    overflow: hidden;
+}
+
+.wps-use-location-icon {
+    background-image: url(../icons/location.svg);
+    background-repeat: no-repeat;
+    background-size: 15px 15px;
+    display: inline-block;
+    height: 15px;
+    width: 15px;
+}
+
+.wps-use-location-icon.active,
+  .wps-use-location-btn.active .wps-use-location-icon {
+    background-image: url(../icons/location-active.svg);
+}
+
+.wps-map-loading {
+	width: 40px;
+    height: 40px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -20px;
+    margin-right: -20px;
+}
+
+@media (max-width: 767px) {
+  /*Store Locator*/
+    .wps-input-group-addon {
+        border: 0;
+    }
+
+    .wps-form-control, input[type="text"].wps-form-control {
+        border: 0;
+    }
+}
+
+@media (min-width: 480px) {
+  /*Store Locator*/
+    .wps-locator-result-list .locator-result-item {
+        padding: 35px;
+    }
+
+    .wps-locator-result-list .locator-result-item .result-item-address {
+        font-size: 14px;
+    }
+}
+
+@media (min-width: 768px) {
+  /*Store Locator*/
+    .wps-input-group-addon {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .wps-input-group-addon > img {
+        width: 18px;
+        max-width: 18px;
+    }
+
+    .wps-form-control {
+        font-size: 16px;
+        height: 60px;
+    }
+
+    .wps-locator-result-list .locator-result-item {
+        padding: 35px 20px;
+    }
+
+    .wps-use-location-icon {
+        background-size: 18px 18px;
+        height: 18px;
+        width: 18px;
+    }
+}
+
+@media (min-width: 992px) {
+  /*Store Locator*/
+    .wps-locator-result-list .locator-result-item {
+        padding: 35px;
+    }
+}
